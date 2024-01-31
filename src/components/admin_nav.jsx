@@ -12,12 +12,12 @@ const Navbar = ({ active, onSelect, ...props }) => {
       <Nav.Item eventKey="home">
         <Link to="/home">Home</Link>
       </Nav.Item>
-      <Nav.Item eventKey="login">
+      {/* <Nav.Item eventKey="login">
         <Link to="/login">Sign In</Link>
       </Nav.Item>
       <Nav.Item eventKey="register">
         <Link to="/register">Sign Up</Link>
-      </Nav.Item>
+      </Nav.Item> */}
       <Nav.Item eventKey="booking">
         <Link to="/booking">Booking</Link>
       </Nav.Item>
