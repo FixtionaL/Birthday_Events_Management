@@ -1,0 +1,26 @@
+const Custom_nav = () => {
+  return (
+    <Navbar>
+      <Navbar.Brand>RSUITE</Navbar.Brand>
+      <Nav>
+        <Link to={`/`}>
+          <Nav.Item icon={<HomeIcon />}>Home</Nav.Item>
+        </Link>
+
+        <Nav.Item>
+          <Link to={`/about` }>About </Link>
+        </Nav.Item>
+
+        <Link to={`/login`}>
+          <Nav.Item>Login</Nav.Item>
+        </Link>
+        <Nav.Item>Products</Nav.Item>
+      </Nav>
+      <Nav pullRight>
+        <Nav.Item icon={<CogIcon />}>Settings</Nav.Item>
+      </Nav>
+    </Navbar>
+
+    // ReactDOM.render(<App />, document.getElementById('root'));
+  );
+};
