@@ -73,7 +73,7 @@ const Register = () => {
         <br />
         <div className={"inputContainer"}>
          
-            <input className={"inputButton"} onClick = {handleChange} type="button" value={"Register"} />
+            <input className={"inputButton"} onClick = {handleChange} type="button" value={"Get Started!"} />
         </div>
       </div>
     </>

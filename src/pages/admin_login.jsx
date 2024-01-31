@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Landing_Nav_2 from "../components/land_nav_2";
 // import '../App.css';
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const Navigate = useNavigate();
   const handleChange = () => {
-    Navigate("/home");
+    Navigate("/admin");
   };
 
   return (
@@ -17,14 +17,14 @@ const Login = () => {
       <Landing_Nav_2/>
       <div className={"mainContainer"}>
         <div className={"titleContainer"}>
-          <div>Sign In Page</div>
+          <div>Administrator</div>
         </div>
         <br />
         <div className={"inputContainer"}>
           <input
             value={email}
             type="email"
-            placeholder="Enter your email here"
+            placeholder="Enter your Admin Username"
             onChange={(ev) => setEmail(ev.target.value)}
             className={"inputBox"}
           />
@@ -48,7 +48,7 @@ const Login = () => {
             className={"inputButton"}
             onClick={handleChange}
             type="button"
-            value={"Hop in!"}
+            value={"Log In"}
           />
           {/* </Link> */}
         </div>
@@ -57,4 +57,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AdminLogin;

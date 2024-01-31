@@ -10,6 +10,7 @@ import Home from "./pages/home";
 import Feedback from "./pages/feedback";
 import Profile from "./pages/profile";
 import Admin from "./pages/admin";
+import AdminLogin from "./pages/admin_login";
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/feedback" element={<Feedback></Feedback>} />
           <Route path="/profile" element={<Profile></Profile>} />
           <Route path="/admin" element={<Admin></Admin>} />
+          <Route path="/admin_login" element={<AdminLogin></AdminLogin>} />
         </Routes>
       </div>
     </Router>

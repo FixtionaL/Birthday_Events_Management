@@ -15,7 +15,7 @@ const Navbar = ({ active, onSelect, ...props }) => {
         <Link to="/register">Sign Up</Link>
       </Nav.Item>
       <Nav.Item eventKey="admin">
-        <Link to="/admin">Admin</Link>
+        <Link to="/admin_login">Admin</Link>
       </Nav.Item>
     </Nav>
   );
