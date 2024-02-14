@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Main_Nav from '../components/home_nav';
+import videoBg from "../assets/sample_5.mp4";
 
 const Booking = () => {
 
@@ -17,16 +18,18 @@ const Booking = () => {
 
   return (
     <>
+    <div className="main">
+    <video src={videoBg} autoPlay loop muted />
     <Main_Nav />
-    <div className="text_container">
+    {/* <div className="text_container">
         <h1 className="no_video_text">
             This is the page that will be used to book Birthday events for our Users!
         </h1>
-    </div>
+    </div> */}
     <div>
     <div className={"mainContainer"}>
         <div className={"titleContainer"}>
-          <div>Book your Hall</div>
+          <div>Your Event!</div>
         </div>
         <br />
         <div className={"inputContainer"}>
@@ -75,13 +78,14 @@ const Booking = () => {
         <br />
         <div className={"inputContainer"}>
           <input
-            className={"inputButton"}
+            className={"inputBox_Button"}
             type="button"
             // onClick={onButtonClick}
-            value={"Finish Booking"}
+            value={"Finish"}
           />
         </div>
       </div>
+    </div>
     </div>
     </>
   )

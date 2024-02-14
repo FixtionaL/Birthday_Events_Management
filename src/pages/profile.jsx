@@ -1,10 +1,13 @@
 import React from "react";
 import Main_Nav from "../components/home_nav";
+import videoBg from "../assets/sample_4.mp4";
 // import './Profile.css';
 
 const Profile = () => {
   return (
     <>
+    <div className="profile_page">
+    {/* <video src={videoBg} autoPlay loop muted /> */}
       <Main_Nav />
       <div className="text_container">
         <h1 className="no_video_text">
@@ -30,6 +33,7 @@ const Profile = () => {
             Add more information as needed */}
         </div>
       </div>
+    </div>
     </>
   );
 };

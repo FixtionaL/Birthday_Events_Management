@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Landing_Nav_2 from "../components/land_nav_2";
+// import Landing_Nav_2 from "../components/land_nav_2";
 // import '../App.css';
 import { useNavigate } from "react-router-dom";
 const AdminLogin = () => {
@@ -14,7 +14,7 @@ const AdminLogin = () => {
 
   return (
     <>
-      <Landing_Nav_2/>
+      {/* <Landing_Nav_2/> */}
       <div className={"mainContainer"}>
         <div className={"titleContainer"}>
           <div>Administrator</div>

@@ -61,7 +61,7 @@
   margin-top: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,10 +78,17 @@
   justify-content: center;
   padding-top: 1%;
   margin-top: 15%;
-  margin-bottom: 10%;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   padding-bottom: 2%;
- 
+  object-fit: contain;
+  width: 500px;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 10px;
+  margin-left: 35%;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgb(200, 199, 199);
+  position: fixed;
 }
 
 .mainContainer_book {
@@ -101,10 +108,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: light;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+
+  font-weight:300;
   font-size:6ch;
-  color:black;
+  color:lightgray;
 
   
 }
@@ -138,6 +147,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  background: transparent;
 }
 
 .inputContainer > .errorLabel {
@@ -150,38 +160,62 @@
   height: 1cm;
   width: 8cm;
   font-size: large;
+  color:lightgray;
   border-radius: 8px;
-  border: 1px solid grey;
+  border: 1px solid rgb(173, 171, 171);
   padding-left: 8px;
   transition: transform 0.2s;
-  box-shadow: 1px 1px 1px 1px grey;
+  background: transparent;
+  text-decoration: none;
+  /* box-shadow: 1px 1px 1px 1px grey; */
+}
+
+.inputBox_Feed {
+  height: 6cm;
+  width: 8cm;
+  font-size: large;
+  color:lightgray;
+  border-radius: 8px;
+  border: 1px solid rgb(173, 171, 171);
+  padding-left: 8px;
+  transition: transform 0.2s;
+  background: transparent;
+  text-decoration: none;
 }
 
 .inputBox:hover { 
   transform: scale(1.1);
-  box-shadow: 1px 1px 1px 1px rgb(4, 4, 4);
-}
-
-.inputBox_Feed {
-  height: 3cm;
-  width: 8cm;
-  font-size: large;
-  border-radius: 8px;
-  border: 1px solid grey;
-  padding-left: 8px;
-  transition: transform 0.2s;
-  box-shadow: 1px 1px 1px 1px grey;
+  box-shadow: 0 0 10px rgba(249, 248, 248);
+  /* box-shadow: 1px 1px 1px 1px rgb(4, 4, 4); */
 }
 
 .inputBox_Feed:hover { 
   transform: scale(1.1);
-  box-shadow: 1px 1px 1px 1px rgb(4, 4, 4);
+  box-shadow: 0 0 10px rgba(249, 248, 248);
+  /* box-shadow: 1px 1px 1px 1px rgb(4, 4, 4); */
+}
+
+.inputBox_Button {
+  height: 1cm;
+  width: 8cm;
+  font-size: large;
+  color:lightgray;
+  border-radius: 8px;
+  border: 1px solid rgb(173, 171, 171);
+  padding-left: 8px;
+  transition: transform 0.2s;
+  background: transparent;
+}
+
+.inputBox_Button:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(249, 248, 248);
 }
 
 .inputButton {
   /* border: 2px solid rgb(198, 23, 23); */
-  background: black;
-  color: white;
+  background: transparent;
+  color: rgb(5, 5, 5);
   padding: 6px 15px;
   font-size: 15px;
   border-radius: 8px;
@@ -194,8 +228,8 @@
 .inputButton:hover {
   transform: scale(0.9);
   color: black;
-  background-color: rgb(201, 199, 199);
-  box-shadow: 1px 1px 1px 1px grey;
+  border: solid black 1px;
+  /* box-shadow: 1px 1px 1px 1px grey; */
 }
 
 .profile {
@@ -231,6 +265,7 @@ transform:scale(1.2);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter;
   margin-left: 5%;
+  color:whitesmoke;
 }
 
 .user_description {
@@ -239,6 +274,7 @@ transform:scale(1.2);
   margin-left: 5%;
   margin-right: 5%;
   font-size: medium;
+  color:whitesmoke;
 }
 
 .main {
@@ -247,20 +283,215 @@ transform:scale(1.2);
 }
 
 video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(50%);
+    /* filter:grayscale(0.5); */
+    position: fixed;
+    /* right: 0;
+    bottom: 0; */
+    /* min-width: 100%; 
+    min-height: 100%; */
+    z-index: -1;
+    
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 36px;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.4);
-  /* background-color: #000000cc; */
+  background-color: #000000cc;
+} */
+
+.navbar {
+  position:absolute;
+  top: 0;
+  right: 0;
+  /* width:100%; */
+  padding-top: 2%;
+  padding-right: 2%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  display: flex;
+  /* font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif; */
+  font-family: 'Mulish',sans-serif;
+  place-items: center;
+  font-size: 2.5ch;
+  font-weight:lighter;
+  /* width:100vh; */
+  /* color:rgb(175, 178, 178); */
+
 }
 
+.others {
+  color: white; /* Text color for the links */
+  text-decoration: none;
+  margin: 8px 20px;
+  /* padding-inline: 10px; */
+}
+.others {
+  background-image: linear-gradient(
+    to right,
+    #4e4f4f,
+    #818383 50%,
+    rgb(253, 252, 252) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
 
+.others:before {
+  content: '';
+  /* background: whitesmoke; */
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+  transition: transform(0.5s);
+}
 
+.others:hover {
+ background-position: 0;
+ transform: scale(1.1);
+}
+
+.others:hover::before {
+  width:100%;
+}
+
+.title {
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 30%;
+ } 
+
+.header {
+  width: 400px;
+  overflow: hidden;
+  padding: 0%;
+  margin: 10 auto;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto'; */
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+  font-size:14ch;
+  /* font-weight:bold; */
+  color: white;
+  white-space: nowrap;
+  /* border-right: 0.05em solid rgb(136, 141, 141); */
+  animation: typing 3s steps(120, end), blink-caret 2s step-end infinite;
+  object-fit: contain;
+}
+@keyframes typing {
+  from { width: 0}
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(136, 141, 141);
+  }
+}
+
+.delay {
+  font-size: 2.5ch;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: 'Roboto'; */
+  color:rgb(251, 249, 249);
+  animation-name: move;
+  animation-delay: 150ms;
+  animation-duration: 2.5s;
+  animation-fill-mode:forwards;
+  position: relative;
+  word-spacing: 2px;
+  font-weight:light;
+  margin-right: 35%;
+}
+@keyframes move {
+  from { left: 0%; }
+  to { left: 30%; }
+}
+
+.img1_title{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 20%;
+  margin-bottom: 25%;
+  
+ }
+ .img1_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+ }
+ .header_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:10ch;
+   color:white;
+ }
+ 
+ .img1_title2 {
+   position: fixed;
+  margin-left:40%;
+  margin-right: 20%;
+  margin-top: 20%;
+ }
+ 
+ .header2_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Sans-serif;
+   font-size:10ch;
+   /* font-weight: bold; */
+   /* font-family: 'Roboto', sans-serif; */
+   color: white;
+ }
+ 
+ .img1_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+   
+ }
+ 
+ .parallax_con {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.profile_page{
+  background-color: #000;
+}

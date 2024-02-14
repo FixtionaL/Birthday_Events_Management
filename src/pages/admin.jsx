@@ -1,11 +1,11 @@
 import React from "react";
-import Admin_Nav from "../components/admin_nav";
+// import Admin_Nav from "../components/admin_nav";
 import videoBg from "../assets/sample_4.mp4";
 const Admin = () => {
   return (
     <>
       <div className="main">
-        <Admin_Nav></Admin_Nav>
+        {/* <Admin_Nav></Admin_Nav> */}
         <div className="overlay"></div>
         <video src={videoBg} autoPlay loop muted />
         <h1 className="land_text">
