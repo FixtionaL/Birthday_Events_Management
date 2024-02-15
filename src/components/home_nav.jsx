@@ -8,6 +8,10 @@ const Main_Nav = () => {
         {" "}
         Jubilify!
       </Link>
+      {/* <Link to="/about" className="others">
+        {" "}
+        About
+      </Link> */}
       <Link to="/booking" className="others">
         {" "}
         Booking

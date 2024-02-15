@@ -431,6 +431,14 @@ video {
   margin-bottom: 25%;
   
  }
+
+ .img1_title4{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 10%;
+  margin-bottom: 25%;
+  
+ }
  .img1_delay-1500 {
    font-size: 2.5ch;
    font-family: 'Mulish',sans-serif;
@@ -457,6 +465,13 @@ video {
   margin-right: 20%;
   margin-top: 20%;
  }
+
+ .img1_title3 {
+  position: fixed;
+ margin-left:40%;
+ margin-right: 20%;
+ margin-top: 30%;
+}
  
  .header2_img1 {
    overflow: hidden;
@@ -495,3 +510,176 @@ video {
 .profile_page{
   background-color: #000;
 }
+
+/* .img1_title{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  
+ }
+ .img1_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+ }
+ .header_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+ }
+ 
+ .img1_title2 {
+   position: fixed;
+  margin-left:40%;
+  margin-right: 20%;
+  margin-top: 25%;
+ } */
+ 
+ .header2_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Sans-serif;
+   font-size:14ch;
+   /* font-weight: bold; */
+   /* font-family: 'Roboto', sans-serif; */
+   color: white;
+ }
+ 
+ .img1_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+   
+ }
+ 
+ .img2_title{
+   position: fixed;
+   margin-left:60%;
+   margin-right: 20%;
+   margin-bottom: 20%;
+   
+  }
+  .img2_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+    
+  }
+  .header_img2 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+    
+  }
+  
+  .img2_title2 {
+    position: fixed;
+   margin-right:60%;
+   margin-left: 10%;
+   margin-top: 25%;
+  }
+  
+  .header2_img2 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+  }
+  
+  .img2_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+  }
+ 
+  .img3_title{
+   position: fixed;
+   margin-left:60%;
+   margin-right: 20%;
+   margin-bottom: 20%;
+   
+  }
+  .img3_delay-1500 {
+    font-size: 1.8ch;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif; */
+    color:white;
+    animation-name: move;
+    animation-delay: 150ms;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    position: relative;
+    word-spacing:5px;
+    
+  }
+  .header_img3 {
+    overflow: hidden;
+    font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+    font-size:12ch;
+    /* font-weight: bold; */
+    color: rgb(223, 226, 226);
+    
+  }
+  
+  .img3_title2 {
+    position: fixed;
+   margin-left:50%;
+   margin-right: 20%;
+   margin-top: 20%;
+   margin-bottom: 20%;
+  }
+  
+  .header2_img3 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+  }
+  
+  .img3_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+  }
